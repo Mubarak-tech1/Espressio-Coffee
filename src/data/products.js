@@ -5,7 +5,7 @@ import IcedMocha from "../assets/images/Iced-Mocha.svg";
 import Muffins from "../assets/images/Muffins.svg";
 import Cookies from "../assets/images/Cookies.svg";
 import Cupcakes from "../assets/images/Cupcakes.svg";
-import Fries from "../assets/images/fries.svg";
+import Fries from "../assets/images/Fries.svg";
 
 
 export const products = [

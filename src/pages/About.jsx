@@ -1,5 +1,5 @@
 import React from "react";
-import ConImg from "../assets/Rectangle 17.svg";
+import ConImg from "../assets/images/Rectangle 17.svg";
 
 const About = () => {
   return (

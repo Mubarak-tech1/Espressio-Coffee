@@ -50,19 +50,4 @@ const Ads = () => {
 
 export default Ads;
 
-// const Ads = () => {
-//   return (
-//     <>
-//         <div className='flex flex-col gap-2 justify-between px-[10px]'>
-//             <div className='border-2 w-fit h-fit grid grid-cols-2'>
-//                 <img src={Adspic1} alt="image" className='w-1/2 h-40'/>
-//                 <img src={Adspic2} alt="image" className=''/>
-//                 <img src={Adspic3} alt="image" className=''/>
-//             </div>
-//             <div className='border-2 w-45'></div>
-//         </div>
-//     </>
-//   )
-// }
 
-// export default Ads

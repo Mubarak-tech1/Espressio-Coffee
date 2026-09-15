@@ -1,31 +1,24 @@
-import React from 'react'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Ads from './components/Ads'
-import Products from './components/Products'
-import Customer from './components/Customer'
-import Join from './components/Join'
-import Footer from './components/Footer'
-import About from './components/About'
+import { Routes, Route } from "react-router-dom";
 
+import Home from "./pages/Home";
+import Menu from "./pages/Menu";
+import About from "./pages/About";
+import ProductDetails from "./pages/ProductDetails";
+import Cart from "./pages/Cart";
+import Layout from "./components/layout/Layout";
 
-const App = () => {
-
+function App() {
   return (
-    <>
-      
-      <Header/>
-      <main><a href="Home">
-        <Hero/>
-        <Ads/>
-        <Products/>
-        <Customer/>
-        <Join/>
-      </a></main>
-      {/* <About/> */}
-      <Footer/>
-    </>
-  )
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/menu/:id" element={<ProductDetails />} />
+        <Route path="/cart" element={<Cart />} />
+      </Route>
+    </Routes>
+  );
 }
 
-export default App
+export default App;
